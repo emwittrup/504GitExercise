@@ -1,4 +1,5 @@
-def function1(a):
+def create_freq_dict(a):
+    """Creates a frequency dictionary of input string a"""
     b = dict()
     for c in a:
         if c not in b:
@@ -13,4 +14,4 @@ def function2(a):
     for b in a.keys():
         print(b + ':' + str(a[b]/total))
 
-function2(function1('ATCTGACGCGCGCCGC'))
+function2(create_freq_dict('ATCTGACGCGCGCCGC'))
